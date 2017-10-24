@@ -7,9 +7,10 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #a6a6a6;
-	position: fixed;
+    position: fixed;
     top: 0;
     width: 100%;
+    display: block;
 }
 
 li {
@@ -30,4 +31,24 @@ li a:hover:not(.active) {
 
 .active {
     background-color: #b380ff;
+}
+
+td tr {
+	position: relative;
+}
+
+/*Responsive Menu*/
+@media screen and (max-width : 760px){
+    
+    ul {
+        position: static;
+    }
+    
+    li {
+        margin-bottom: 1px;
+    }
+    
+    ul li, li a {
+        width: 100%;
+    }
 }
